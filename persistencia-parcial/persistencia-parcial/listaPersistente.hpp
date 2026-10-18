@@ -1,5 +1,3 @@
-// Copyright 2026 dcaracas
-
 #ifndef LISTAPERSISTENTE_HPP_
 #define LISTAPERSISTENTE_HPP_
 

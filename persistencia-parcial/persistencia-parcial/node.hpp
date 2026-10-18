@@ -1,5 +1,3 @@
-// Copyright 2026 dcaracas
-
 #ifndef NODE_HPP_
 #define NODE_HPP_
 

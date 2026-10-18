@@ -1,5 +1,3 @@
-// Copyright 2026 dcaracas
-
 #include "node.hpp"
 
 Node::Node(int chave, Node* prox) {

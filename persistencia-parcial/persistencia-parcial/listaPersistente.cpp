@@ -1,7 +1,4 @@
-// Copyright 2026 dcaracas
-
 #include "listaPersistente.hpp"
-
 #include <vector>
 
 ListaPersistente::ListaPersistente() {

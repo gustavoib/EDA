@@ -2,7 +2,9 @@
 
 ## Equipe
 
+Bruna Gomes Carneiro (537993)
 Diego Caracas Mendes (542564)
+João Gustavo Irineu Braga (538609)
 
 ## Descrição
 
@@ -11,7 +13,7 @@ Diego Caracas Mendes (542564)
 - **Linguagem de programação utilizada:** C++17, compilado com `g++`
 - **Como compilar e rodar:**
   - `make build` compila e gera o executável `programa`
-  - `make run INPUT=arquivo.txt` roda o programa com o arquivo de entrada
+  - `make run INPUT=arquivo.in` roda o programa com o arquivo de entrada
   - `make test` roda os testes da pasta `testes/` e compara com as saídas esperadas
 
 ### Ideia Geral

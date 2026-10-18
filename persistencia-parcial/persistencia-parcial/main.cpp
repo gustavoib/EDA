@@ -1,5 +1,3 @@
-// Copyright 2026 dcaracas
-
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -9,7 +7,7 @@
 
 using namespace std;
 
-const string SEPARADOR = " ";
+const string SEPARADOR = ", ";
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
@@ -24,6 +22,7 @@ int main(int argc, char* argv[]) {
 
   ListaPersistente lista;
   string operacao;
+  bool primeiro = true;  // controla a quebra de linha entre as saídas
 
   while (arquivo >> operacao) {
     if (operacao == "INC") {
@@ -37,17 +36,25 @@ int main(int argc, char* argv[]) {
     } else if (operacao == "SUC") {
       int n, m;
       arquivo >> n >> m;
+
+      if (!primeiro) cout << "\n";
+      primeiro = false;
+
       cout << "SUC " << n << " " << m << "\n";
 
       int resposta;
       if (lista.sucessor(n, m, resposta)) {
-        cout << resposta << "\n";
+        cout << resposta;
       } else {
-        cout << "inf\n";
+        cout << "inf";
       }
     } else if (operacao == "IMP") {
       int m;
       arquivo >> m;
+
+      if (!primeiro) cout << "\n";
+      primeiro = false;
+
       cout << "IMP " << m << "\n";
 
       vector<int> elementos = lista.elementos(m);
@@ -57,9 +64,7 @@ int main(int argc, char* argv[]) {
         }
         cout << elementos[i];
       }
-      cout << "\n";
     }
   }
-
   return 0;
 }
